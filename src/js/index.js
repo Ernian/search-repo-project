@@ -85,7 +85,7 @@ function displayRepo(repos) {
         <a href="${html_url}" target="_blank">${full_name}</a>
       </h5>
       <h6 class="card-subtitle mb-2 text-muted">Обновлен: ${updated_at}</h6>
-      <h6 class="card-subtitle mb-2 text-muted">Язык: ${language}</h6>
+      <h6 class="card-subtitle mb-2 text-muted">Язык: ${language || 'Не указан'}</h6>
       <h6 class="card-subtitle mb-2 text-muted">Количество звезд на Github: ${stargazers_count}</h6>
       <p class="card-text">Описание: ${description || 'Нет описания'}</p>
     </div>
