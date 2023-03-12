@@ -1,0 +1,10 @@
+body {
+  width: 90%;
+  max-width: 650px;
+  margin: 0 auto;
+  padding: 30px 0;
+}
+
+#select-limit {
+  max-width: 350px;
+}
