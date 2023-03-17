@@ -79,12 +79,12 @@ function displayRepo(repos) {
     html_url,
     language,
     stargazers_count }) => (`  
-  <div class="card mb-3">
+  <div class="card mb-3 shadow">
     <div class="card-body">
       <h5 class="card-title">
         <a href="${html_url}" target="_blank">${full_name}</a>
       </h5>
-      <h6 class="card-subtitle mb-2 text-muted">Обновлен: ${updated_at}</h6>
+      <h6 class="card-subtitle mb-2 text-muted">Обновлен: ${updated_at.slice(0, 10)}</h6>
       <h6 class="card-subtitle mb-2 text-muted">Язык: ${language || 'Не указан'}</h6>
       <h6 class="card-subtitle mb-2 text-muted">Количество звезд на Github: ${stargazers_count}</h6>
       <p class="card-text">Описание: ${description || 'Нет описания'}</p>
